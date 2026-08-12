@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienes Raíces JIGA | Compra, venta y alquiler de propiedades</title>
+  <meta name="description" content="Bienes Raíces JIGA ofrece asesoría inmobiliaria personalizada para compra, venta y alquiler de propiedades con transparencia, profesionalismo y conocimiento del mercado.">
+  <meta name="keywords" content="Bienes Raíces JIGA, inmobiliaria, compra de propiedades, venta de propiedades, alquiler de propiedades, asesoría inmobiliaria">
+  <meta property="og:title" content="Bienes Raíces JIGA | Soluciones inmobiliarias profesionales">
+  <meta property="og:description" content="Compra, vende o alquila con acompañamiento inmobiliario personalizado, transparente y profesional.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-jiga.png">
+  <link rel="icon" type="image/png" href="assets/logo-jiga.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="loader" aria-hidden="true">
+    <div class="loader-shell">
+      <img src="assets/logo-jiga.png" alt="" class="loader-logo">
+      <div class="loader-spinner"></div>
+      <span class="loader-text">Cargando...</span>
+    </div>
+  </div>
+
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Bienes Raíces JIGA — inicio">
+          <img src="assets/logo-jiga.png" alt="Logo de Bienes Raíces JIGA">
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué JIGA</a></li>
+            <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Bienes%20Ra%C3%ADces%20JIGA%20y%20quiero%20recibir%20asesor%C3%ADa%20inmobiliaria."
+           target="_blank" rel="noopener noreferrer" class="btn-gold nav-cta">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Por qué JIGA</a>
+      <a href="#ambientes">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Bienes%20Ra%C3%ADces%20JIGA%20y%20quiero%20recibir%20asesor%C3%ADa%20inmobiliaria."
+         target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge reveal" id="hero-badge">
+            <span class="badge-dot"></span>
+            Compra · venta · alquiler de propiedades
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Decisiones</span></span>
+            <span class="line"><span>inmobiliarias</span></span>
+            <span class="line"><span>con</span></span>
+            <span class="line"><span class="accent type-target">confianza.</span></span>
+          </h1>
+
+          <p class="hero-sub reveal d1" id="hero-sub">
+            Bienes Raíces JIGA acompaña a particulares e inversores con asesoría personalizada, transparencia y conocimiento del mercado para comprar, vender o alquilar mejor.
+          </p>
+
+          <div class="hero-ctas reveal d2" id="hero-ctas">
+            <a href="https://wa.me/?text=Hola%2C%20quiero%20asesor%C3%ADa%20de%20Bienes%20Ra%C3%ADces%20JIGA%20para%20una%20propiedad."
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              Solicitar asesoría
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-building-user"></i>
+              Ver servicios
+            </a>
+          </div>
+
+          <div class="hero-trust reveal d3" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Atención transparente
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-user-tie"></i>
+              Trato personalizado
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-chart-line"></i>
+              Enfoque para inversores
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <section id="why" aria-labelledby="why-heading">
+      <div class="particle-field" aria-hidden="true"></div>
+      <div class="container">
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              Una propiedad no se decide a ciegas.
+              <em>Se decide con claridad.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            JIGA combina atención cercana, lectura del mercado y una comunicación honesta para que cada operación inmobiliaria avance con seguridad desde la primera conversación.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <h3>Transparencia desde el inicio</h3>
+            <p>Información clara, acompañamiento responsable y expectativas bien definidas durante la compra, venta o alquiler.</p>
+          </article>
+          <article class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <h3>Atención personalizada</h3>
+            <p>Cada cliente tiene objetivos distintos; por eso la asesoría se adapta a particulares e inversores.</p>
+          </article>
+          <article class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <h3>Conocimiento del mercado</h3>
+            <p>Orientación práctica para evaluar oportunidades inmobiliarias en un entorno dinámico y competitivo.</p>
+          </article>
+          <article class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <h3>Relaciones duraderas</h3>
+            <p>El servicio se construye con profesionalismo, confianza y seguimiento antes, durante y después de cada decisión.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="section-bg section-bg-one" aria-hidden="true"></div>
+      <div class="container">
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Servicios inmobiliarios</div>
+            <h2 class="section-title" id="amb-heading">
+              Soluciones para cada etapa<br>
+              <span class="gold">de tu operación</span>
+            </h2>
+            <p class="section-lead">
+              Compra, venta y alquiler con asesoría enfocada en reducir fricción, ordenar la información y tomar mejores decisiones.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">Asesoría premium</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+          <article class="amb-card reveal">
+            <img class="amb-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop" alt="Casa moderna como referencia para compra de propiedades">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+              <h3>Compra de propiedades</h3>
+              <p>Acompañamiento para identificar oportunidades, comparar opciones y avanzar con una visión clara.</p>
+              <div class="amb-temp">Para vivir o invertir</div>
+            </div>
+          </article>
+
+          <article class="amb-card reveal d1">
+            <img class="amb-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1400&auto=format&fit=crop" alt="Firma de operación inmobiliaria como referencia para venta de propiedades">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-file-signature"></i>
+              </div>
+              <h3>Venta de propiedades</h3>
+              <p>Guía profesional para presentar mejor tu propiedad y conectar con compradores alineados.</p>
+              <div class="amb-temp">Proceso claro y ordenado</div>
+            </div>
+          </article>
+
+          <article class="amb-card reveal d2">
+            <img class="amb-img" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" alt="Interior residencial como referencia para alquiler de propiedades">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-key"></i>
+              </div>
+              <h3>Alquiler de propiedades</h3>
+              <p>Apoyo para encontrar, ofrecer o evaluar espacios de renta con criterios prácticos y transparentes.</p>
+              <div class="amb-temp">Hogares y oportunidades</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+        <div class="proceso-header reveal">
+          <div class="label">Cómo funciona</div>
+          <h2 class="section-title" id="proceso-heading">
+            Un proceso simple, humano y <span class="gold">profesional</span>
+          </h2>
+          <p>JIGA ordena cada conversación para que sepas qué sigue, qué información necesitas y cómo avanzar sin presión.</p>
+        </div>
+
+        <div class="proceso-grid">
+          <article class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Cuéntanos tu objetivo</h3>
+            <p>Comprar, vender, alquilar o invertir: partimos de tus necesidades específicas para definir el mejor camino.</p>
+          </article>
+          <article class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Revisamos opciones</h3>
+            <p>Analizamos propiedades, contexto y prioridades para darte una recomendación clara y útil.</p>
+          </article>
+          <article class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Avanzamos con confianza</h3>
+            <p>Te acompañamos con comunicación profesional para que la operación se sienta ordenada de principio a fin.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+          <div class="reveal">
+            <div class="label">Asesor principal</div>
+            <h2 class="section-title" id="prod-heading">
+              Atención directa con<br>
+              <span class="gold">Raúl Eduardo Gallardo Lara</span>
+            </h2>
+            <p class="producto-lead">
+              Un servicio inmobiliario premium empieza con alguien que escucha, entiende tu contexto y te explica con claridad las opciones disponibles.
+            </p>
+
+            <ul class="feature-rows" aria-label="Beneficios de la asesoría inmobiliaria">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-comments"></i></div>
+                <div>
+                  <h4>Comunicación clara</h4>
+                  <p>Respuestas directas para que cada paso sea fácil de entender.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-scale-balanced"></i></div>
+                <div>
+                  <h4>Criterio profesional</h4>
+                  <p>Evaluación responsable de oportunidades, necesidades y escenarios.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></div>
+                <div>
+                  <h4>Relación de confianza</h4>
+                  <p>Un acompañamiento pensado para crear vínculos duraderos con los clientes.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal d2">
+            <div class="advisor-scene">
+              <img src="assets/raul-gallardo-inmobiliario.jpeg" alt="Raúl Eduardo Gallardo Lara, asesor de Bienes Raíces JIGA">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <span class="p-badge-dot"></span>
+                Asesoría personalizada
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-building"></i>
+                Bienes Raíces JIGA
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" aria-label="Números clave de Bienes Raíces JIGA">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="3" data-suffix="" aria-label="3 servicios centrales">0</div>
+            <div class="stat-lbl">Servicios<br>centrales</div>
+          </div>
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="2" data-suffix="" aria-label="2 perfiles de cliente">0</div>
+            <div class="stat-lbl">Clientes particulares<br>e inversores</div>
+          </div>
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="1" data-suffix="" aria-label="1 atención personalizada">0</div>
+            <div class="stat-lbl">Atención<br>personalizada</div>
+          </div>
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="100" data-suffix="%" aria-label="100 por ciento enfoque transparente">0</div>
+            <div class="stat-lbl">Enfoque<br>transparente</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+        <div class="sectores-hdr reveal">
+          <div class="label">Clientes</div>
+          <h2 class="section-title" id="sec-heading">
+            Servicio pensado para <span class="gold">diferentes objetivos</span>
+          </h2>
+          <p>El mismo estándar profesional aplicado a necesidades habitacionales, patrimoniales e inmobiliarias.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-people-roof sector-icon" aria-hidden="true"></i>
+            <h3>Familias</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-user-check sector-icon" aria-hidden="true"></i>
+            <h3>Clientes particulares</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-chart-pie sector-icon" aria-hidden="true"></i>
+            <h3>Inversores</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-city sector-icon" aria-hidden="true"></i>
+            <h3>Propietarios</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-door-open sector-icon" aria-hidden="true"></i>
+            <h3>Arrendatarios</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" aria-labelledby="gal-heading">
+      <div class="section-bg section-bg-two" aria-hidden="true"></div>
+      <div class="container">
+        <div class="gallery-hdr reveal">
+          <div class="label">Galería</div>
+          <h2 class="section-title" id="gal-heading">
+            Una presencia inmobiliaria que <span class="gold">inspira confianza</span>
+          </h2>
+          <p>Las imágenes de propiedades son referencias visuales libres de derechos; la foto del asesor proviene del material real entregado para este proyecto.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card reveal">
+            <img src="assets/raul-gallardo-inmobiliario.jpeg" alt="Raúl Eduardo Gallardo Lara frente a edificio residencial">
+            <figcaption>Atención directa por Raúl Eduardo Gallardo Lara.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal d1">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop" alt="Referencia visual de fachada residencial moderna">
+            <figcaption>Referencia visual para compra y venta residencial.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal d2">
+            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1400&auto=format&fit=crop" alt="Referencia visual de interior residencial premium">
+            <figcaption>Referencia visual para evaluar espacios habitacionales.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu próxima propiedad</span>
+          </h2>
+          <p>Solicita una conversación inicial y recibe atención personalizada de Bienes Raíces JIGA.</p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div class="contact-info">
+            <h3>Datos del negocio</h3>
+            <p class="ci-sub">Servicio inmobiliario profesional para compra, venta y alquiler de propiedades.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Asesor</h4>
+                  <p>Raúl Eduardo Gallardo Lara</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Correo</h4>
+                  <p><a href="mailto:raulgallardo61@gmail.com">raulgallardo61@gmail.com</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Abre WhatsApp con un mensaje preparado para solicitar asesoría.</p>
+                  <a href="https://wa.me/?text=Hola%2C%20quiero%20asesor%C3%ADa%20inmobiliaria%20de%20Bienes%20Ra%C3%ADces%20JIGA."
+                     target="_blank" rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir WhatsApp
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Solicitar asesoría</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control" placeholder="Tu nombre" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Comprar una propiedad</option>
+                    <option>Vender una propiedad</option>
+                    <option>Alquilar una propiedad</option>
+                    <option>Invertir en bienes raíces</option>
+                    <option>Asesoría general</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Mensaje</label>
+                <textarea id="f-msg" class="form-control" rows="4" required placeholder="Cuéntanos qué tipo de propiedad u operación estás buscando."></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                El formulario abre WhatsApp con tu mensaje listo para continuar la conversación.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo-jiga.png" alt="Logo de Bienes Raíces JIGA">
+          <p>Soluciones inmobiliarias con transparencia, profesionalismo y atención personalizada.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#why">Por qué JIGA</a>
+          <a href="#ambientes">Servicios</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-socials">
+          <a href="mailto:raulgallardo61@gmail.com" class="footer-soc" aria-label="Enviar correo">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Bienes%20Ra%C3%ADces%20JIGA%20y%20quiero%20informaci%C3%B3n."
+             target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Bienes Raíces JIGA. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Bienes%20Ra%C3%ADces%20JIGA%20y%20quiero%20recibir%20asesor%C3%ADa%20inmobiliaria."
+     target="_blank" rel="noopener noreferrer" class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
